@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MainView" customModule="Drawing" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FIx-Hu-UXh">
+                                <rect key="frame" x="69.5" y="36" width="51" height="31"/>
+                                <connections>
+                                    <action selector="CircleSwAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ctL-l5-DKJ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JmS-Dc-Wdd">
+                                <rect key="frame" x="163" y="36" width="51" height="31"/>
+                                <connections>
+                                    <action selector="TriSwAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="9og-qc-rZW"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bgo-Ka-sLu">
+                                <rect key="frame" x="257" y="36" width="51" height="31"/>
+                                <connections>
+                                    <action selector="FanSwAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="8y0-CW-w6R"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XX4-e4-46Q">
+                                <rect key="frame" x="72" y="77" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triangle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-nr-RTk">
+                                <rect key="frame" x="157" y="77" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAn-kq-3qY">
+                                <rect key="frame" x="268" y="77" width="27.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DqT-2q-n1H">
+                                <rect key="frame" x="69.5" y="122" width="51" height="31"/>
+                                <connections>
+                                    <action selector="LineSwAcion:" destination="BYZ-38-t0r" eventType="valueChanged" id="euE-kX-gdJ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wcF-d9-eI1">
+                                <rect key="frame" x="163" y="122" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SinSwAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vst-P7-J98"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kNc-hh-VNQ">
+                                <rect key="frame" x="257" y="122" width="51" height="31"/>
+                                <connections>
+                                    <action selector="CosSwAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="eEX-aU-ltL"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSi-J3-Unz">
+                                <rect key="frame" x="78" y="163" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clo-HM-Uoh">
+                                <rect key="frame" x="175" y="163" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEQ-qQ-3B8">
+                                <rect key="frame" x="266" y="163" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kNc-hh-VNQ" firstAttribute="centerX" secondItem="Bgo-Ka-sLu" secondAttribute="centerX" id="0Ru-8o-OLG"/>
+                            <constraint firstItem="JmS-Dc-Wdd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1JW-eP-lTu"/>
+                            <constraint firstItem="kNc-hh-VNQ" firstAttribute="centerY" secondItem="DqT-2q-n1H" secondAttribute="centerY" id="2Uu-sF-4kB"/>
+                            <constraint firstItem="wcF-d9-eI1" firstAttribute="centerX" secondItem="JmS-Dc-Wdd" secondAttribute="centerX" id="4e5-dD-qRH"/>
+                            <constraint firstItem="dEQ-qQ-3B8" firstAttribute="centerX" secondItem="kNc-hh-VNQ" secondAttribute="centerX" id="7dv-qX-pA9"/>
+                            <constraint firstItem="TSi-J3-Unz" firstAttribute="centerX" secondItem="DqT-2q-n1H" secondAttribute="centerX" id="9ce-0O-CZQ"/>
+                            <constraint firstItem="Bgo-Ka-sLu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.5" id="EjK-aX-3b9"/>
+                            <constraint firstItem="wcF-d9-eI1" firstAttribute="centerY" secondItem="DqT-2q-n1H" secondAttribute="centerY" id="LFy-ui-H2p"/>
+                            <constraint firstItem="TSi-J3-Unz" firstAttribute="top" secondItem="DqT-2q-n1H" secondAttribute="bottom" constant="10" id="QH0-Jf-tdR"/>
+                            <constraint firstItem="HAn-kq-3qY" firstAttribute="top" secondItem="Bgo-Ka-sLu" secondAttribute="bottom" constant="10" id="R17-tW-vcd"/>
+                            <constraint firstItem="DqT-2q-n1H" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.4" id="SoJ-KA-s82"/>
+                            <constraint firstItem="FIx-Hu-UXh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.15" id="UCJ-MB-rlz"/>
+                            <constraint firstItem="gMC-nr-RTk" firstAttribute="centerX" secondItem="JmS-Dc-Wdd" secondAttribute="centerX" id="VIs-mB-GO5"/>
+                            <constraint firstItem="Clo-HM-Uoh" firstAttribute="top" secondItem="wcF-d9-eI1" secondAttribute="bottom" constant="10" id="WPK-2R-8Ow"/>
+                            <constraint firstItem="dEQ-qQ-3B8" firstAttribute="top" secondItem="kNc-hh-VNQ" secondAttribute="bottom" constant="10" id="XrJ-lF-Q9n"/>
+                            <constraint firstItem="Clo-HM-Uoh" firstAttribute="centerX" secondItem="wcF-d9-eI1" secondAttribute="centerX" id="ZLT-Jx-O8O"/>
+                            <constraint firstItem="XX4-e4-46Q" firstAttribute="centerX" secondItem="FIx-Hu-UXh" secondAttribute="centerX" id="aIF-2H-Kvd"/>
+                            <constraint firstItem="XX4-e4-46Q" firstAttribute="top" secondItem="FIx-Hu-UXh" secondAttribute="bottom" constant="10" id="ayX-xb-Pl8"/>
+                            <constraint firstItem="Bgo-Ka-sLu" firstAttribute="centerY" secondItem="JmS-Dc-Wdd" secondAttribute="centerY" id="bvl-ns-ntm"/>
+                            <constraint firstItem="HAn-kq-3qY" firstAttribute="centerX" secondItem="Bgo-Ka-sLu" secondAttribute="centerX" id="e9t-ex-RmH"/>
+                            <constraint firstItem="DqT-2q-n1H" firstAttribute="centerX" secondItem="FIx-Hu-UXh" secondAttribute="centerX" id="pCB-a6-rVT"/>
+                            <constraint firstItem="gMC-nr-RTk" firstAttribute="top" secondItem="JmS-Dc-Wdd" secondAttribute="bottom" constant="10" id="pg6-Px-Tlu"/>
+                            <constraint firstItem="JmS-Dc-Wdd" firstAttribute="centerY" secondItem="FIx-Hu-UXh" secondAttribute="centerY" id="rLd-Xr-yLO"/>
+                            <constraint firstItem="FIx-Hu-UXh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.5" id="ye1-3O-L1T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="CircleSw" destination="FIx-Hu-UXh" id="hNn-dS-xqF"/>
+                            <outlet property="CosSw" destination="kNc-hh-VNQ" id="xZx-AT-x80"/>
+                            <outlet property="FanSw" destination="Bgo-Ka-sLu" id="HZ0-MJ-kvF"/>
+                            <outlet property="LineSw" destination="DqT-2q-n1H" id="NOc-YX-24a"/>
+                            <outlet property="SinSw" destination="wcF-d9-eI1" id="Z7A-0N-NAb"/>
+                            <outlet property="TriSw" destination="JmS-Dc-Wdd" id="urg-NO-tHM"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="MainView" destination="8bC-Xf-vdC" id="5oh-1F-8kV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
